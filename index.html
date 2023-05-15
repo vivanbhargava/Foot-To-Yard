@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Foot To Yard</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Foot</label>
+            <input id="input" type="number" placeholder="Foot" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Yard: <span id="outputyard"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputyard").innerHTML = valNum / 3;
+        }
+    </script>
+
+</body></html>
